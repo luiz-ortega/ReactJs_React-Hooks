@@ -7,6 +7,7 @@ import Lesson5 from './components/Lesson5';
 import Lesson6 from './components/Lesson6';
 import Lesson7 from './components/Lesson7';
 import Lesson8 from './components/Lesson8';
+import Lesson9 from './components/Lesson9';
 import MouseContainer from './components/MouseContainer';
 import Forms from './components/Forms';
 
@@ -36,8 +37,10 @@ function App() {
             <MouseContainer /> */}
             {/* Lesson7:
             <Lesson7 /> */}
-            Lesson8:
-            <Lesson8 />
+            {/* Lesson8:
+            <Lesson8 /> */}
+            Lesson9:
+            <Lesson9 />
         </div>
     );
 }
