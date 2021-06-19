@@ -25,12 +25,15 @@ function Form() {
     useLog
   )(initialValues as IInitialValues);
 
+  console.log(composed);
+
   return (
     <div>
       <pre>{JSON.stringify(composed.data, null, 2)}</pre>
       <input
-        value={composed.data.name ? composed.data.name : ""}
+        value={composed?.data?.name ? composed?.data?.name : ""}
         onChange={(e) =>
+          composed?.data &&
           composed.setData({ ...composed.data, name: e.currentTarget.value })
         }
       />
